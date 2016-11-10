@@ -1,12 +1,19 @@
 ﻿using NUnit.Framework;
 
 using SkeletonCode.CurrencyConverter;
+using System;
 
 namespace UnitTests.CurrencyConverter
 {
 	[TestFixture]
 	public class CurrencyConverterTests
 	{
+		[Test]
+		public void ItShouldThrowArgumentNullExceptionIfConstructedWithNoRates()
+		{
+			Assert.Throws<ArgumentNullException>(() => new Converter(null));
+		}
+
 		[Test]
 		public void ItShouldConvertFromPoundsToDollarsCorrectly()
 		{
