@@ -6,6 +6,11 @@
 		{
 			string output = string.Empty;
 
+			if(string.IsNullOrEmpty(input))
+			{
+				return output;
+			}
+
 			for(int i = input.Length - 1; i >= 0; i--)
 			{
 				output += input[i];
