@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace SkeletonCode.CardGame
+﻿namespace SkeletonCode.CardGame
 {
 	public interface ICard
 	{
+		Suit Suit { get ;}
+		Face Face { get ; }
 	}
 }
