@@ -5,7 +5,7 @@ using SkeletonCode.ReversingString;
 namespace UnitTests.ReversingString
 {
 	[TestFixture]
-	public class StringUtiltiesTests
+	public class StringUtilitiesTests
 	{
 		[TestCase("", "")]
 		[TestCase("skeleton", "noteleks")]
