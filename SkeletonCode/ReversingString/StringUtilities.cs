@@ -1,22 +1,20 @@
-﻿namespace SkeletonCode.ReversingString
+﻿using System;
+
+namespace SkeletonCode.ReversingString
 {
 	public class StringUtilities
 	{
 		public string Reverse(string input)
 		{
-			string output = string.Empty;
-
 			if(string.IsNullOrEmpty(input))
 			{
-				return output;
+				return string.Empty;
 			}
 
-			for(int i = input.Length - 1; i >= 0; i--)
-			{
-				output += input[i];
-			}
+			var charArray = input.ToCharArray();
+			Array.Reverse(charArray);
 
-			return output;
+			return new string(charArray);
 		}
 	}
 }
